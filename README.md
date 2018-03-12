@@ -1,6 +1,8 @@
 # Serverless Merge Config
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![Build Status](https://travis-ci.org/CruGlobal/serverless-merge-config.svg?branch=master)](https://travis-ci.org/CruGlobal/serverless-merge-config)
+[![Coverage Status](https://coveralls.io/repos/github/CruGlobal/serverless-merge-config/badge.svg?branch=master)](https://coveralls.io/github/CruGlobal/serverless-merge-config?branch=master)
+[![npm version](https://badge.fury.io/js/%40cruglobal%2Fserverless-merge-config.svg)](https://badge.fury.io/js/%40cruglobal%2Fserverless-merge-config)
 
 Serverless merge config adds the ability to merge configuration after serverless variables have been evaluated.
 

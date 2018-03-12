@@ -9,3 +9,5 @@ install:
 script:
   - npm run lint
   - npm test
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
