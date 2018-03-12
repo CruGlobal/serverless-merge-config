@@ -1,5 +1,6 @@
 # Serverless Merge Config
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
+[![Build Status](https://travis-ci.org/CruGlobal/serverless-merge-config.svg?branch=master)](https://travis-ci.org/CruGlobal/serverless-merge-config)
 
 Serverless merge config adds the ability to merge configuration after serverless variables have been evaluated.
 
