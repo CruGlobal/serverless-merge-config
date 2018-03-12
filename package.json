@@ -1,6 +1,6 @@
 {
   "name": "@cruglobal/serverless-merge-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Serverless merge config adds the ability to merge configuration after serverless variables have been evaluated.",
   "main": "index.js",
   "repository": {

@@ -15,7 +15,7 @@ class ServerlessMergeConfig {
 
     this.hooks = {
       'before:package:initialize': this.mergeConfig.bind(this),
-      'before:offline:start': this.mergeConfig.bind(this)
+      'before:offline:start:init': this.mergeConfig.bind(this)
     }
   }
 
