@@ -35,6 +35,16 @@ provider:
 ```
 This will merge everything in `path/to/other.yml` to provider. Duplicate properties will be overridden by the merged value.
 
+It is possible to use array if you want to merge variables from multiple sources:
+```yaml
+provider:
+    name: aws
+    $<<:
+      - ${file:path/to/other.yml}
+      - ${file:path/to/another.yml}
+```
+This will merge everything in `path/to/other.yml`, then in `file:path/to/another.yml` to provider. Duplicate properties will be overridden by the merged value.
+
 **caveat**: `serverless print` will not show the merged configuration. This command reloads and parses serverless.yml a second time with no hooks for plugins to tie into.
 
 # Contributing
