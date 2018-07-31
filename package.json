@@ -29,5 +29,9 @@
       "node": true,
       "jest": true
     }
+  },
+  "jest": {
+      "testURL": "http://localhost/",
+      "testEnvironment": "node"
   }
 }
