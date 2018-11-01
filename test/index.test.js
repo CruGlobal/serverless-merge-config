@@ -54,6 +54,13 @@ describe('serverless-merge-config', () => {
     })
   })
 
+  it('should merge arrays of objects', () => {
+    let config = {provider: {name: 'aws', '$<<': [{foo: 'bar'}, {egg: 'spam'}]}}
+    let plugin = constructPlugin(config)
+    plugin.mergeConfig()
+    expect(plugin.serverless.service).toEqual({provider: {name: 'aws', foo: 'bar', egg: 'spam'}})
+  })
+
   it('should not merge arrays', () => {
     let config = {provider: {name: 'aws', '$<<': [1, 2, 3]}}
     let plugin = constructPlugin(config)
